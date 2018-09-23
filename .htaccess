@@ -1,0 +1,3 @@
+#Options+Indexes
+IndexIgnore *.gif *.jpg *.png *.php
+DirectoryIndex preload.php

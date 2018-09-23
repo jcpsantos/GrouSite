@@ -1,0 +1,364 @@
+<html>
+    <head>
+        <title>Grou Turismo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                background: url(imagens/fundo.jpg) no-repeat center top fixed;
+                width: 100%;
+            }
+            .ger-rede{
+                padding-left: 0px;
+                padding-right: 0px;
+				margin-bottom:20px;
+            }
+            a{
+                color:rgba(0,0,0,0.8);
+            }
+            a:hover{
+                color:rgba(0,0,0,0.8);
+                text-decoration: none;
+            }
+            a:focus {
+                outline: none;
+                outline-offset: 0;
+            }
+            .imgbg{
+                /*background: url(imagens/fundo.jpg) no-repeat center top fixed;*/
+                /*width: 100%;*/
+                /*height: 100%;*/
+                /*                height: 100%;
+                                background-size:100% 100%;*/
+            }
+
+            .box-imagem-hotel img{
+                box-shadow: 0px 1px 4px rgba(0,0,0,0.0);
+				margin-top:10px;
+            }
+
+            .box-hotel{
+                padding: 12px;
+                background-color: rgb(250,250,250);
+                box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+                margin-top: 15px;
+                border-radius: 2px;
+            }
+            .box-hotel-imagem{
+                overflow: hidden;
+            }
+            .overlay{
+                overflow: hidden;
+                position:relative;
+            }
+
+            .overlay .after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                display: none;
+                color: #FFF;
+                background: rgba(255, 255, 255, .6);
+                transition: 1s;
+                -webkit-transition: width 2s; /* Safari */
+                transition: width 2s;
+                padding: 8px;
+            }
+            .overlay:hover .after {
+                width: 100%;
+                display: block;
+            }
+            .after img {
+                margin-top:10%;
+            }
+
+            .box-hotel .imghotel {
+                width: 100%;
+                -webkit-transition: all 1s ease 0s;
+                -moz-transition: all 1s ease 0s;
+                -ms-transition: all 1s ease 0s;
+                -o-transition: all 1s ease 0s;
+                transition: all 1s ease 0s;
+
+            }
+           .box-hotel:hover .imghotel {
+                -moz-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+
+            }
+            .box-hotel:hover{
+                box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+            }
+            .tit-hotel{
+                font-family: 'Roboto', sans-serif;
+                font-size: 38px;
+                font-weight: lighter;
+                margin-top: 10px;
+                background-color: rgba(0,0,0,0.0);
+                color: #fff;
+                text-align: center;
+                padding: 5px 10px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            .tit-box-hotel{
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: lighter;
+                margin-top: 10px;
+            }
+            .dados-box-hotel{
+                margin-top: 15px;
+            }
+            .box-rdp{
+                position: absolute;
+                width: 100%;
+                bottom: 10px;
+               	text-align:right;
+				margin-left:8%;
+                color:#fff;
+            }
+            .box-rdp ul{
+                list-style: none;
+            }
+            .box-rdp ul li{
+                float:left;
+                padding: 8px 12px 8px 5px;
+            }
+			.mar_sep{
+				margin-bottom:15px
+				}
+			.block-esq{
+				position:fixed; height:100%;
+				}
+            @media (min-width: 320px) and (max-width: 800px){
+                .box-rdp{
+                    position: relative;
+                    bottom:0px;
+                }
+                .box-imagem-hotel img{
+                    width: 100%;
+                }
+                .imgbg{
+	                 /*   background: url(imagens/fundo_celular.jpg) no-repeat center top fixed;*/
+                }
+				.block-esq{
+				position:relative; height:auto;
+				}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ger-rede container-fluid">
+            <div class='imgbg'>
+                <div class="col-md-5 block-esq">                    
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-sm-12 text-left">
+                            <div class="box-imagem-hotel">
+                                <img src="imagens/logo_grou.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class='box-rdp'>
+                            <ul>
+                                <li>
+                                	<a href="https://www.facebook.com/pages/GROU-Turismo/267905363234829?fref=ts" target="_blank">
+                                    	<img src="imagens/facebook.svg" alt="Facebook" width="32">
+                                    </a>
+                                </li>
+                                <li>
+                                	<a href="https://instagram.com/grouturismo" target="_blank">
+                                    	<img src="imagens/instagram.svg" alt="Facebook" width="32">
+                                    </a>               
+                                </li>
+                                <li>
+                                	<a href="https://twitter.com/grou_turismo" target="_blank"><strong></strong>
+                                    	<img src="imagens/twitter.svg" alt="Facebook" width="32">
+                                	</a>
+                                </li>
+                                <li>
+                                	<a href="https://www.youtube.com/channel/UCvh6byb4BcjmbYh7ViGJexQ" target="_blank">
+                                    	<img src="imagens/youtube.svg" alt="Facebook" width="32">
+                                    </a>              
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                    
+                    <div class="col-md-7" style="float:right; height:100%; margin-bottom:20px;">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="tit-hotel">
+                                        Escolha o seu destino
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mar_sep">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://salvador.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/salvador.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Salvador</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://costadosauipe.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/costadosaiupe.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Costa do Sau&iacute;pe</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://praiadoforte.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/praiadoforte.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Praia do Forte e Iberostar</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mar_sep">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://imbassai.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/grandpalladiumimbassai.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Grand Palladium Imbassa&iacute;</div>
+                                        </div>
+                                    </a>
+                                </div>   
+                                
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://vilagalemares.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/vilagalemares.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Vila Gal&eacute; Mares</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://morrodesaopaulo.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/morrodesaopaulo.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Morro de S&atilde;o Paulo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://itacare.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/itacare.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Itacar&eacute;</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://ilheus.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/ilheus.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Ilh&eacute;us</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://portoseguro.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/portoseguro.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Porto Seguro</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                        
+<!--                        <div class="row mar_sep">
+                            <div class="col-md-12 col-xs-12 col-sm-12">                  
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <a href="http://olivencaecanabrava.focomultimidia.com">
+                                        <div class="box-hotel">
+                                            <div class="box-hotel-imagem">
+                                                <div class="overlay">
+                                                    <img src="imagens/olivencacanabrava.jpg" class="img-responsive center-block imghotel">
+                                                </div>
+                                            </div>
+                                            <div class="tit-box-hotel">Oliven&ccedil;a & Cana Brava</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>-->    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

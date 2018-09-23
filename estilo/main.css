@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'futura_lt_btlight';
+    src: url('../fontes/futural-webfont.woff2') format('woff2'), url('../fontes/futural-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: url('../imagens/bg.jpg') no-repeat top fixed;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.box-logo {
+    display: table;
+    width: 100%;
+    height: 90%;
+    padding: 0 3.125rem;
+    position: relative;
+}
+
+.box-logo .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.box-conteudo {
+    padding: 3.125rem 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box-conteudo .conteudo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'futura_lt_btlight';
+    color: 002d81;
+    font-weight: bold;
+    font-size: 2.6vw;
+}
+
+h3 {
+    font-family: 'futura_lt_btlight';
+    color: 002d81;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.0vw;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 1.7vw;
+}
+
+h3:hover {
+    color: #f4f4f3;
+}
+
+h3 span,
+.tit-box-hotel span {
+    color: #f4f4f3;
+    background: #be0811;
+    padding: 2px 4px;
+    font-size: 0.7vw !important;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.box-imagem-hotel img {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.0);
+    margin-top: 10px;
+}
+
+.box-hotel {
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
+}
+
+.box-hotel .tit-box-hotel {
+    font-family: 'futura_lt_btlight';
+    color: #002d81;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5vh;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 2.5vh;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.yes-mobile {
+    display: none;
+}
+
+.no-mobile {
+    display: block;
+}
+
+.first-img {
+    margin-top: -1.5vw
+}
+
+.middle-img {
+    margin: 2vw 0 3.5vw
+}
+button{
+    margin-top: 10px;
+    vertical-align: middle;
+    font-family: 'futura_lt_btlight';
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3vw;;
+    border: none;
+    background: transparent;
+    padding: 4px 10px;
+    border-radius: 3px;
+    transition: all 0.4s;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+}
+button:hover{
+    background: #fff;
+}
+button:hover svg{
+    fill: #002d81;
+}
+button:hover span{
+    color: #002d81;
+}
+
+button svg, 
+button span{
+    vertical-align: middle;
+}
+
+
+/*A_grou*/
+
+
+.titulo{
+    display: none;
+}
+
+.box-conteudoGrou {
+    padding: 3.125rem 0;
+    display: table;
+    width: 97%;
+    height: 90vh;
+    position: absolute;
+    background-color: #f6f6f6;
+    margin-top: 2vh;
+    margin-right: 20vh;
+    border-radius: 7px;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all .5s;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.blue{
+    color: #002d81;
+    font-family: 'futura_lt_btlight';
+    font-size: 18px; 
+    text-align: justify;
+    font-weight: 700;
+}
+
+
+
+.margem-img{
+    margin-bottom: 5vh;
+}
+.menu{
+      text-align: center;
+}
+.menu ul {
+    list-style: none;
+    display: inline-block
+}
+
+.menu ul li {
+    float: left;
+    margin: 0 25px;
+    font-size: 25px;
+    font-family: 'futura_lt_btlight';
+    cursor: pointer;
+}
+.menu ul li a{
+    color: white;
+}
+.menu ul li a:hover,
+.menu ul li a:active{
+    color: #002d81;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar,
+::-webkit-scrollbar-track-piece{
+    background-color: #002d81;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-button{  
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{ 
+    background-color: #64b5f6;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-corner{
+    display: none;
+ }
+::-webkit-resizer{
+    display: none;
+}              
+
+
+/*Animação*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .bounceIn {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+  }
+
+  /*Iframe*/
+  .material-icons {
+    color:#002d81;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/*Menu Responsivo*/
+
+.sidenav {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: -500px;
+    background-color:#002d81;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+    padding: 0px 30px;
+    list-style: none;
+}
+
+.sidenav :hover{
+    background-color: #fff;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #002d81;
+    background-color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+@media (max-width: 960px){
+    .img-pages {
+        width: 63vh !important;
+    }
+
+    div .figura{
+        margin-top: 3vh;
+        margin-left: 3vh !important;
+        margin-right: 22vh !important;
+    }
+
+    .img-call{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 0vh;
+        margin-right: 3vh;
+    }
+}
+
+@media (min-width:1020px) and (max-width: 1024px) {
+    .first-img {
+        margin-top: 0.5vw !important
+    }
+    .middle-img {
+        margin: 6vw 0 9.5vw !important
+    }
+
+    div .figura{
+        margin-top: 3vh;
+        margin-left: 3vh !important;
+        margin-right: 5vh !important;
+    }
+
+    .img-pages {
+        width: 33vh !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .first-img {
+        margin-top: -1vw
+    }
+    .middle-img {
+        margin: 4vw 0 7.5vw
+    }
+
+    .img-pages {
+        width: 30vh !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .first-img {
+        margin-top: -1vw
+    }
+    .middle-img {
+        margin: 4vw 0 7.0vw
+    }
+
+    .img-pages {
+        width: 25vh;
+    }
+
+    div .figura {
+        margin-top: 3vh;
+        margin-left: 2vh;
+        margin-right: 7vh;
+    }
+}
+
+@media (max-width: 1440px) {
+    .first-img {
+        margin-top: -1.5vw
+    }
+    .middle-img {
+        margin: 3vw 0 4vw
+    }
+}
+
+@media (max-width: 1680px){
+    .img-pages {
+        width: 30vh !important;
+    }
+}
+
+@media (max-width: 1920px) {
+    .first-img {
+        margin-top: -2.5vw
+    }
+    .middle-img {
+        margin: 2vw 0 3.5vw
+    }
+
+    .img-pages {
+        width: 36vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .tit-box-hotel span {
+        font-size: 2.4vw !important;
+        vertical-align: text-top;
+    }
+    .marginBottom {
+        margin-bottom: 20px;
+    }
+    .yes-mobile {
+        display: block;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .box-imagem-hotel img {
+        width: 100%;
+    }
+    h1 {
+        font-size: 6.5vw;
+    }
+    
+    .openButtonMobile{
+        position: relative;
+    }
+    
+    h3{
+        font-size: 5vw;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+     }
+    
+    ::-webkit-scrollbar-track{
+       display: none;
+    }
+    ::-webkit-scrollbar-track-piece{
+        display: none
+     }
+    ::-webkit-scrollbar-thumb{ 
+       display: none;
+    }
+            
+}
